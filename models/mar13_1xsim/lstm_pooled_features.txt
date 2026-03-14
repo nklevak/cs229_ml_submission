@@ -1,0 +1,9 @@
+epoch_num
+is_correct
+rt
+timed_out_flag
+game_type_digit_span
+cue_stay_between_block
+cue_switch_between_block
+rest_used_so_far
+dataset_replication

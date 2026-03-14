@@ -1,0 +1,28 @@
+[
+  {
+    "split": "pooled",
+    "ridge_baseline_mae": 4.536668035524971,
+    "ridge_baseline_r2": 0.5517454023882272,
+    "gbm_baseline_mae": 3.493723309884346,
+    "gbm_baseline_r2": 0.6788561837729574,
+    "ridge_extended_mae": 3.031676194984706,
+    "ridge_extended_r2": 0.7194171643008446,
+    "gbm_extended_mae": 2.80415636072921,
+    "gbm_extended_r2": 0.7364170460768783,
+    "lstm_mae": 2.680226392105774,
+    "lstm_r2": 0.7114792994445664,
+    "lstm_params": {
+      "epochs": 100,
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.3,
+      "lr": 0.002,
+      "weight_decay": 0.001,
+      "batch_size": 8,
+      "val_frac": 0.2
+    },
+    "n_train_subjects": 151,
+    "n_simulated_subjects": 151,
+    "sim_multiplier": 1.0
+  }
+]

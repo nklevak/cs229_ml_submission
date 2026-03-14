@@ -1,0 +1,48 @@
+[
+  {
+    "split": "dataset",
+    "ridge_baseline_mae": 4.74237297929622,
+    "ridge_baseline_r2": 0.47899107767125926,
+    "gbm_baseline_mae": 4.482233673799109,
+    "gbm_baseline_r2": 0.4953696085678061,
+    "ridge_extended_mae": 3.364144938621795,
+    "ridge_extended_r2": 0.6932456090684781,
+    "gbm_extended_mae": 3.0991668745854866,
+    "gbm_extended_r2": 0.7154461408608938,
+    "lstm_mae": 3.6021400033945405,
+    "lstm_r2": 0.5835059056701524,
+    "lstm_params": {
+      "epochs": 100,
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.3,
+      "lr": 0.002,
+      "weight_decay": 0.001,
+      "batch_size": 8,
+      "val_frac": 0.2
+    }
+  },
+  {
+    "split": "pooled",
+    "ridge_baseline_mae": 4.530376225771925,
+    "ridge_baseline_r2": 0.5548979878309898,
+    "gbm_baseline_mae": 3.3094842289711455,
+    "gbm_baseline_r2": 0.6855083498987946,
+    "ridge_extended_mae": 3.036712033348196,
+    "ridge_extended_r2": 0.7195084092783757,
+    "gbm_extended_mae": 2.8038442464905233,
+    "gbm_extended_r2": 0.7376856966878658,
+    "lstm_mae": 2.96719065617632,
+    "lstm_r2": 0.6776622472686259,
+    "lstm_params": {
+      "epochs": 100,
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.3,
+      "lr": 0.002,
+      "weight_decay": 0.001,
+      "batch_size": 8,
+      "val_frac": 0.2
+    }
+  }
+]

@@ -53,7 +53,7 @@ REST_VS_EPOCH_STYLE = {
     "palette": {"real dist": "black", "Ridge (+ hist)": "C0", "GBM (+ hist)": "C1", "LSTM": "C2"},
 }
 
-def load_pooled_results(models_dir: Path):
+def load_pooled_results(models_dir):
     """Load results.json from a run in a given model directory"""
     path = models_dir / "results.json"
     if not path.exists():

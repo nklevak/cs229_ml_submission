@@ -103,7 +103,7 @@ def kfold_by_subject(df, n_splits=15, random_state=42):
     """
     K-fold cross-validation by subject.
     Each subject's epochs are entirely in train or entirely in val for a given fold.
-    Returns a list of (train_df, val_df) per fold
+    Returns (train_df, val_df) per fold
     """
     groups = df["subject_id"].values
     n_subjects = df["subject_id"].nunique()

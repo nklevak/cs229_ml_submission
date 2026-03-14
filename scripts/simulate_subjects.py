@@ -46,7 +46,7 @@ def fit_linear_and_sigmas(X, y, subject_ids, min_resid=0.01, min_subj=0.01):
 def fit_rest_model(df, feature_cols):
     """
     Ridge regression for rest_length. 
-    Returns (model, scaler, resid_std, sigma_subject)
+    Gets (model, scaler, resid_std, sigma_subject)
     Later: change this to be a glmer? to maintain within subject consistency more
     """
     X = df[feature_cols].to_numpy(dtype=float)

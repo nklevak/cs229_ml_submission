@@ -22,11 +22,8 @@ class RestLSTM(nn.Module):
         self.fc = nn.Linear(hidden_size, 1)
 
     def forward(self, x, lengths=None):
-        """
-        x: (batch, seq_len, n_features)
-        lengths: (batch,) actual sequence lengths (for packing)
-        Returns: (batch, seq_len, 1)
-        """
+        """x (batch, seq_len, n_features); lengths (batch,) for packing. 
+        Out shape (batch, seq_len, 1)."""
         if lengths is not None:
             packed = nn.utils.rnn.pack_padded_sequence(
                 x, lengths.cpu(), batch_first=True, enforce_sorted=False

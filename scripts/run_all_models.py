@@ -96,7 +96,7 @@ def sweep_ridge_alpha(folds, alphas, seed=42):
 
 
 def make_gbm_params(n_est, max_d, lr, seed):
-    """returns a dict of params to feed into the GBM
+    """Gets a dict of params to feed into the GBM
     putting into a function to maintain consistency
     has early stopping and uses 10% of val to decide when to stop
     """

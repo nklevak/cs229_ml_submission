@@ -87,7 +87,7 @@ def get_num_timeouts_per_epoch():
 
 def get_epoch_table():
     """
-    Returns an updated blockwise file from both datasets 
+    Processes an updated blockwise file from both datasets 
     (including trial data that we calculate)
     renames rest_length from num_rest_in_chunk, includes all other included blockwise variables,
     and num_timeouts (calculated from trial-level files in get_num_timeouts_per_epoch()).
